@@ -83,7 +83,7 @@ const mouseleave3 = function(event, d) {
         .enter()
         .append("circle")
         .attr("id", (d) => d.day)
-        .attr("cx", (d) => xScale(d.day)) //sets x data
+        .attr("cx", (d) => xScale(d.day)) 
         .attr("cy", (d) => yScale(d.score))
         .attr("r", 8)
         .style("fill", (d) => d.day)
