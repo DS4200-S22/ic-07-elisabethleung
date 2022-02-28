@@ -25,8 +25,7 @@ d3.csv("data/scatter.csv").then((data) => {
     let maxY = d3.max(data, (d) => { return d.score; });
     console.log("Max y: " + maxY);
 
-    let xScale = d3.scaleLinear() // linear scale because we have
-        // linear data
+    let xScale = d3.scaleLinear()
         .domain([0, maxX])
         .range([margin.left, width - margin.right]);
 
